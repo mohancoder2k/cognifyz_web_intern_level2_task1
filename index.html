@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Component</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="icon" type="image/png" href="fullstack.png"/>
+  <style>
+    body{
+      background-color: aqua;
+    }
+    .container{
+      padding-top: 50px;
+    }
+ 
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="height: 50px; font-size: 30px; padding-top: 20px; text-align: center;">Mohan, Full Stack Developer</h1>
+  <h2 style="height: 40px; font-size: 25px; padding-top: 20px; text-align: center;" >Skills</h2>
+  <div class="container">
+    <div class="card-container">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="HTML-Full-Form.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>HTML is an Structured Language. It represents the skeleton of any web page</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="CSS.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>CSS Stands for Cascading Style Sheet. Used to develop an Styling and Responsive Webpage. Its like making Painting and Furnishing the House. House with Concrete and bricks is an HTML.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="JS.jpeg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>JS Stands for JavaScript. Used for Validation in Websites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="java.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>Core Java is an Robust Programming language. Used as Backend Development in building robust Applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="Spring.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>Spring BOOT is an Backend Java Framework to build Applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="mysql.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>MySQl is an Structured Query Language used in DataBase Management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
